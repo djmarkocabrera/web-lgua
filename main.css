@@ -6,6 +6,7 @@
 body {
 	background-image: url("assets/bg-main.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #header {
@@ -23,8 +24,8 @@ ul, ol {
 }
 
 .phrase {
-	right:50px;
-	top:50px;
+	right:190px;
+	bottom:35px;
 	position:absolute;
 	color:whitesmoke;
 	font-size:x-large;
@@ -98,7 +99,7 @@ ul, ol {
 
 .social ul li .icon {
 	background: white;
-	width: 30px;
+	width: 25px;
 	height: 30px;
 }
 .social ul li .icon-facebook {background:#3b5998;}
@@ -112,8 +113,8 @@ ul, ol {
 }
 
 .logo{
-	right:160px;
-	bottom:-20px;
+	right:140px;
+	bottom:10px;
 	position:absolute;
 	animation: hover-logo .8s infinite ease-in-out alternate;
 }
@@ -123,4 +124,3 @@ ul, ol {
 		transform: translate3d(0,20px,0);
 	}
 }
-			
