@@ -6,38 +6,17 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>L-GUA</title>
 		<link rel="stylesheet" href="main.css">   
-		<link rel="icon" type="image/png" href="/PAGINA WEB/assets/favicon.png" sizes="64x64"> 
+		<link rel="icon" type="image/png" href="" sizes="64x64"> 
 	</head>
 	<body>
-		<!-- Frase -->
-		<p class="phrase">
-			STREET WEAR FOR MEN
-		</p>
-		<!-- Botones redes sociales -->    
-		<div class="social">
-			<ul>
-				<li>
-					<a href="" target="_blank" class="icon">
-						<img src="./assets/social/facebook-logo-button.png" />
-					</a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/lguaes/?hl=es" target="_blank" class="icon">
-						<img src="./assets/social/instagram-logo.png" />
-					</a>
-				</li>
-				<li>
-					<a href="" target="_blank" class="icon">
-						<img src="./assets/social/twitter-logo-button.png" />
-					</a>
-				</li>
-			</ul>
-		</div>
 		<div id="header">
-            <nav>
+			<div class="logo">
+				<img src="./assets/logo1.png">
+			</div>
+			<div class="menu">
 				<ul class="nav">
 					<li><a href="">INICIO</a></li>
-					<li><a href="/gorras.html">GORRAS</a>
+					<li><a href="/SUBPÁGINAS/gorras.html">GORRAS</a>
 					</li>
 					<li><a href="/camisetas.html">CAMISAS</a>
 						<ul>
@@ -73,15 +52,63 @@
 						</ul>
 					</li>
 				</ul>
-			</nav>
+			</div>
+				<div class="phrase">
+					<p>STREET WEAR FOR MEN</p>
+				</div>
 		</div>
-		<!-- Logo -->
-		<img 
-			src="assets/logo1.png" 
-			width="400"
-			height="341" 
-			class="logo">
 
+		<div class="clothesContainer">
+			<div class="clothesContent" style="display: none"></div>
+			  <div id="STREET" class="section" onclick="">
+				  <div class="content">
+					  <h1>STREET</h1>
+				  </div>
+  
+				  <div class="overlay"></div>
+			  </div>
+  
+			  <div id="WEAR" class="section" onclick="">
+				  <div class="content">
+					  <h1>WEAR</h1>
+				  </div>
+  
+				  <div class="overlay"></div>
+			  </div>
+  
+			  <div id="FORMEN" class="section" onclick="">
+				  <div class="content">
+					  <h1>FOR MEN</h1>
+				  </div>
+  
+				  <div class="overlay"></div>
+			  </div>
+		  </div>
+  
+		  <footer>
+			  <div class="social">
+				  <a href="" target="_blank">
+					  <img src="./assets/social/twitter.png" height="35px">
+				  </a>
+				  <a href="https://www.instagram.com/lguaes/?hl=es" target="_blank">
+					  <img src="./assets/social/instagram.png" height="35px">
+				  </a>
+				  <a href="https://www.facebook.com/L-GUA-345175422788621/" target="_blank">
+					  <img src="./assets/social/facebook.png" height="35px">
+				  </a>
+			  </div>
+  
+			  <div class="copyrightContainer">
+				  <div class="copyrightContent">
+					  <div class="copyright">
+						  <p>
+							  <span>© 2019 - L-GUA</span>
+						  </p>
+					  </div>
+				  </div>
+			  </div>
+		  </footer>
+		</div>
 		<script src="index.js"></script>
 	</body>
 </html>

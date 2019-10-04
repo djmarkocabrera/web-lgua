@@ -3,51 +3,79 @@
 	padding:0px;
 }
 
-body {
-	background-image: url("assets/bg-main.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-}
 
 #header {
 	margin:auto;
-	width:650px;
+	width:100%;
+	height: 100px;
 	font-family:'Courier New', Courier, monospace;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 100%;
+}
+
+.logo {
+	display: flex;
+	float: left;
+	width: 35%;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+.logo img {
+	display: flex;
+	float: left;
+	flex-direction: column;
+	height: 100px;
+	align-content: center;
+	align-items: center;
+}
+
+.phrase {
+	display: flex;
+	float:right;
+	width: 35%;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+}
+
+.phrase p {
+	display: flex;
+	float:right;
+	flex-direction: row;
+	font-size: 25px;
+	align-content: center;
+	align-items: center,
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	width: 55%;
 }
 
 ul, ol {
 	list-style:none;
 }
 
-.phrase {
-	right:190px;
-	bottom:35px;
-	position:absolute;
-	color:whitesmoke;
-	font-size:x-large;
-}
-
 .nav {
-	width: 80vw;
+	width: 60vw;
 	display: flex;
 	justify-content: center;
 	align-content: center;
 }
 
-.nav > li {
-	float:left;
-}
 
 .nav li a {
 	background-color:#000;
 	color:#fff;
 	text-decoration:none;
-	padding:10px 12px;
-	display:block;
+	padding:14px 16px;
+	display:flex;
 }
 
 .nav li a:hover {
@@ -57,7 +85,7 @@ ul, ol {
 .nav li ul {
 	display:none;
 	position:absolute;
-	min-width:140px;
+	min-width:125px;
 }
 
 .nav li:hover > ul {
@@ -69,58 +97,99 @@ ul, ol {
 }
 
 .nav li ul li ul {
-	right:-140px;
+	right:-120px;
 	top:0px;
 }
 
+.clothesContainer {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    transition: flex .4s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.section .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: background-color .8s ease;
+}
+
+.section .content {
+    z-index: 2;
+    font-family: "Bahianita";
+    font-size: 2rem;
+}
+
+.section:hover {
+    flex: 2;
+}
+
+.section:hover .overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#STREET {
+    background-image: url(./assets/camiseta\ roja.JPG)
+}
+
+#WEAR {
+    background-image: url(./assets/chaleco.JPG)
+}
+
+#FORMEN {
+    background-image:url(./assets/sueter\ amarillo.JPG)
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+	background: rgb(110, 105, 105);
+}
+
 .social {
-	position: absolute;
-	z-index: 2000;
-	top: 20%;
-	left: 0;
-}
-	
-.social ul {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: row;
 }
 
-.social ul li a {
-	display: inline-block;
-	color:#fff;
-	background: #000;
-	padding: 10px 15px;
-	text-decoration: none;
-	-webkit-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	transition:all 500ms ease;
+.copyrightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.social ul li .icon {
-	background: white;
-	width: 25px;
-	height: 30px;
-}
-.social ul li .icon-facebook {background:#3b5998;}
-.social ul li .icon-twitter {background: #00abf0;}
-.social ul li .icon-instagram {background: #ae181f;}
-.social ul li .icon-mail {background: #666666;}
-
-.social ul li a:hover {
-	background: #fff;
-	padding: 10px 30px;
+.copyrightContent {
+    display: flex;
+    align-items: center;
 }
 
-.logo{
-	right:140px;
-	bottom:10px;
-	position:absolute;
-	animation: hover-logo .8s infinite ease-in-out alternate;
+.copyright {
+    color:#fff;
+    font-size: 0.8rem;
+    font-family: "Big Calson";
 }
 
-@keyframes hover-logo{
-	100% {
-		transform: translate3d(0,20px,0);
-	}
+@keyframes donut-chart-fill {
+    to { stroke-dasharray: 0 100; }
 }
